@@ -22,44 +22,44 @@
       gesture-detector
       id="scene"
     >
-      <audio id="song" src="./assets/Canon Rock.mp3"></audio>
+      <audio id="song" src="./assets/naruto.mp3"></audio>
 	    
       <a-assets>
         <a-asset-item
-          id="couple"
-          src="./couple1.glb"
+          id="tigers"
+          src="./tiger.glb"
         >
         </a-asset-item>
         
         <a-asset-item
-          id="house"
-          src="./candy_house.glb"
+          id="hipposes"
+          src="./hippos.glb"
         >
         </a-asset-item>
         
         <a-asset-item 
-        id="cake" 
+        id="elepante" 
         response-type="arraybuffer" 
-        src="./cakes.glb"
+        src="./elephant.glb"
         >
         </a-asset-item>
         
         <a-asset-item 
-        id="butterflies" 
+        id="chicks" 
         response-type="arraybuffer" 
-        src="./butterflies.glb"
+        src="./chicken  .glb"
         >
         </a-asset-item>
       </a-assets>
       
       <a-marker
         type="pattern"
-        url="https://johnbenedictcastillo.github.io/bscsA/cruz-malabanan/marker/pattern-couple1.patt"
+        url="https://ronnelbillones.github.io/Trial/marker/pattern-tiger.patt"
       >
     
     <a-entity id="entity" look-at="[camera]">
       <a-entity
-          gltf-model="#house" 
+          gltf-model="#hippos" 
           scale="0.001 0.001 0.001" 
           position = "0 0 0" 
 	  rotation = "0 -90 0"
@@ -67,7 +67,7 @@
         </a-entity>
 
 	<a-entity
-          gltf-model="#cake" 
+          gltf-model="#elephant" 
           scale="0.015 0.015 0.015" 
           position = "-0.4 0 0.7" 
 	  animation-mixer = "clip:Take 001"
@@ -75,7 +75,7 @@
         </a-entity>
 	
 	<a-entity
-          gltf-model="#butterflies" 
+          gltf-model="#chicken" 
           scale="2 2 2" 
           position = "1 1 -2" 
 	  animation-mixer = "clip:Animation"
@@ -83,8 +83,8 @@
         </a-entity>
 	    
         <a-entity
-          id="couple-model"
-          gltf-model="#couple"
+          id="tigers"
+          gltf-model="#tiger"
           position="0 0 1.2"
           scale="0.005 0.005 0.005"
           class="clickable"
