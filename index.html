@@ -58,6 +58,12 @@
         >
         </a-asset-item>
 
+        <a-asset-item 
+        id="trees" 
+        src="./trees.glb"
+        >
+        </a-asset-item>
+
       </a-assets>
       
       <a-marker
@@ -98,13 +104,23 @@
 
         <a-entity
         gltf-model="#eagle" 
-        scale="0.005 0.005 0.005" 
+          scale="0.007 0.007 0.007" 
         position = "0.3 1 0.7" 
  	 animation-mixer = "clip:CINEMA_4D_Principal"
 	class="clickable"
           gesture-handler
       >
       </a-entity>
+
+      <a-entity
+      gltf-model="#trees" 
+      scale="0.007 0.007 0.007" 
+      position = "0.2 1 0.7" 
+  animation-mixer = "clip:Take 001"
+class="clickable"
+        gesture-handler
+    >
+    </a-entity>
 	    
         <a-entity
           id="tigers"
