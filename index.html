@@ -64,6 +64,24 @@
         >
         </a-asset-item>
 
+        <a-asset-item 
+        id="giraffe" 
+        src="./giraffe.glb"
+        >
+        </a-asset-item>
+
+        <a-asset-item 
+        id="horse" 
+        src="./horse.glb"
+        >
+        </a-asset-item>
+
+        <a-asset-item 
+        id="kangaroo" 
+        src="./kangaroo.glb"
+        >
+        </a-asset-item>
+
       </a-assets>
       
       <a-marker
@@ -121,6 +139,36 @@ class="clickable"
         gesture-handler
     >
     </a-entity>
+
+    <a-entity
+    gltf-model="#giraffe" 
+    scale="0.007 0.007 0.007" 
+    position = "0.2 1 0.7" 
+animation-mixer = "clip:Take 01"
+class="clickable"
+      gesture-handler
+  >
+  </a-entity>
+
+  <a-entity
+  gltf-model="#horse" 
+  scale="0.007 0.007 0.007" 
+  position = "0.2 1 0.7" 
+animation-mixer = "clip:idel_testnyi"
+class="clickable"
+    gesture-handler
+>
+</a-entity>
+
+<a-entity
+gltf-model="#kangaroo" 
+scale="0.007 0.007 0.007" 
+position = "0.2 1 0.7" 
+animation-mixer = "clip:kan_idle"
+class="clickable"
+  gesture-handler
+>
+</a-entity>
 	    
         <a-entity
           id="tigers"
